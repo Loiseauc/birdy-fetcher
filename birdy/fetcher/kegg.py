@@ -120,6 +120,9 @@ def generate_kegg_set(output_path, db, formats, input_ids, use_cache=True):
                     formats[fmt], db, use_cache=use_cache
                 )
             else:
+                ids = get_random_kegg_ids_set(
+                    formats[fmt], db, use_cache=use_cache
+                )
                 ids = input_ids
 
             i = 0

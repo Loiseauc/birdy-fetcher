@@ -80,6 +80,9 @@ def generate_ncbi_set(output_path, db, formats, input_ids, use_cache=True):
                     formats[fmt], db, config.ENTREZ_SEARCH
                 )
             else:
+                ids = get_random_ncbi_ids_set(
+                    formats[fmt], db, config.ENTREZ_SEARCH
+                )
                 ids = input_ids
 
             i = 0

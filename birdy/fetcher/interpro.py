@@ -134,6 +134,7 @@ def generate_interpro_set(output_path, count, input_ids=None, use_cache=True):
         if input_ids is None:
             ids = get_random_interpro_ids_set(count, use_cache=use_cache)
         else:
+            ids = get_random_interpro_ids_set(count, use_cache=use_cache)
             ids = input_ids
 
         i = 0

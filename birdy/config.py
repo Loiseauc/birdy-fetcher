@@ -86,16 +86,4 @@ SQUIZZ_FORMATS = [
 ]
 
 # ID test
-KEGG_ID = [
-    'path:map00909', 'path:map00910', 'path:map00920', 'path:map00930',
-    'path:map00940', 'path:map00941', 'path:map00942', 'path:map00943',
-    'path:map00944', 'path:map00945']
-DSSP_ID = [
-    '1a00', '1a01', '1a02', '1a03', '1a04', '1a05', '1a06', '1a07',
-    '1a08', '1a09']
-INTERPRO_ID = [
-    'IPR002351', 'IPR002366', 'IPR002369', 'IPR023418', 'IPR002404',
-    'IPR002420', 'IPR031145', 'IPR023266', 'IPR002363', 'IPR016271']
-PDB_ID = [
-    '175D', '175L', '176D', '176L', '177D', '177L', '178D', '178L',
-    '179D', '17GS']
+DATASET_FILE = os.environ.get('DATASET_FILE', None)

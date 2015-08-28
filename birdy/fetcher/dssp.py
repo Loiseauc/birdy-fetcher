@@ -113,6 +113,7 @@ def generate_dssp_set(output_path, formats, input_ids=None, use_cache=True):
         if input_ids is None:
             ids = get_random_dssp_ids_set(formats[fmt], use_cache=use_cache)
         else:
+            ids = get_random_dssp_ids_set(formats[fmt], use_cache=use_cache)
             ids = input_ids
 
         i = 0
